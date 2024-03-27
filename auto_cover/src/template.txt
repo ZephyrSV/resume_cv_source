@@ -1,0 +1,17 @@
+Dear Hiring Team,
+
+I am writing to express my keen interest in the position of <position> at <company>.
+Recently graduated from the Universitat Politecnica de Catalunya in Barcelona, with multiple high grades (average 8.28) and honor mentions, I recently moved back to Brussels and I am eager to bring my skills and passion to your esteemed organization.
+
+Upon reviewing your job posting, it became evident that this role aligns perfectly with my qualifications, experiences, and professional preferences. My expertise in Python and C++, coupled with practical experience, positions me as an ideal candidate for this position.
+
+Throughout my previous work experiences, I have used C++11 to lead the design and development of software compatible across multiple architectures of microcontrollers interconnected using Wifi and BLE. This involved creating a seamless connection between physical products and web interfaces through a Python backend featuring a REST API made with Flask.
+
+Additionally, during my internship at HP, I utilized C++17 to implement new features for a slicing software designed for SLS 3D printers, demonstrating my ability to design efficient algorithms for 3D models.
+
+I am confident that my proficiency in Python and C++, along with my hands-on experience, makes me well-equipped to contribute effectively to the innovative projects within <company>.
+
+I look forward to the opportunity for further discussion and am available at your earliest convenience for an interview. Thank you for considering my application.
+
+Sincerely,
+

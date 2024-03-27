@@ -1,0 +1,2 @@
+if tgpt doesnt work, run:
+'sudo tgpt -u' to update it
