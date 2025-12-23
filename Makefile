@@ -2,8 +2,7 @@ OUTPUT = main.pdf
 OUTPUT_DIR = ./output/
 
 make:
-	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make main.tex
-	mv $(OUTPUT) $(OUTPUT_DIR)$(OUTPUT)
+	latexmk -output-directory="$(OUTPUT_DIR)" -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make main.tex
 
 # Define the clean target for removing generated files
 clean:

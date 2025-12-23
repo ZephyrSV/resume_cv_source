@@ -2,8 +2,17 @@
 
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
 \usepackage{textcomp} % for \textasciitilde command
+\usepackage{enumitem} 
 \usepackage{bookmark}
 
+\hypersetup{
+    colorlinks=true,   % use colored text for links
+    linkcolor=black,   % internal links
+    urlcolor=black,    % URLs
+    citecolor=black    % citations
+}
+
+\setlist[itemize]{topsep=-3pt, itemsep=-5pt, left=5pt}
 
 \renewcommand*\familydefault{\sfdefault} 	
 
@@ -12,109 +21,96 @@
 \newcommand{\mytilde}[0]{
     \raisebox{0.5ex}{\texttildelow}
 }
-\name{Zephyr Serret} % Your name
-% You can merge both of these into a single line, if you do not have a website.
-\address{+32 470 85 10 51 \\ Brussels, Belgium} 
-\address{\href{mailto:zserret@me.com}{zserret@me.com} \\ \href{https://linkedin.com/in/zephyrsv}{linkedin.com/in/zephyrsv} \\ \href{https://github.com/ZephyrSV}{github.com/ZephyrSV}}  %
+\name{Zephyr Serret}
+\address{+32 470 85 10 51 \\ \href{mailto:zserret@me.com}{zserret@me.com} \\ \href{https://linkedin.com/in/zephyrsv}{linkedin.com/in/zephyrsv} \\ \href{https://github.com/ZephyrSV}{github.com/ZephyrSV}}  %
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	OBJECTIVE
+% EDUCATION 
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{OBJECTIVE}
+\begin{rSection}{Education}
 
-{Software Engineer with\mytilde2 years of experience in Full Stack Development, seeking full-time Software Engineering roles.}
+{\bf Universitat Politècnica de Catalunya \textendash{} UPC} \hfill {Sept 2019 \textendash{} Jan 2024}\\
+Bachelor of Computer Science with Major in Computing \hfill {\it Barcelona, Spain} 
+
+{\bf University of Edinburgh} \hfill {Sept 2022 \textendash{} Dec 2022}\\
+{Erasmus \textendash{}Minor in Machine Learning}  \hfill {\it Edinburgh, UK\/}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-% TECHINICAL STRENGTHS	
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+    \href{https://omp.com/}{\textbf{OM Partners}}           \hfill May 2024 \textendash{} Present \\
+    \textit{Software Development Engineer} \hfill \textit{Antwerp, Belgium}
+    \begin{itemize}
+        \item {Collaborated on a multi-threaded graph-based algorithm (C++20) delivered to end customers (supply-chain planners) and internal optimization engine.}
+        \item {Contributed to moving a legacy monolithic system toward a microservices-based architecture.}
+        \item {Introduced new tooling and data-structures improving the codebase's debuggability, understandability and performance, landing me a spot in the company's C++ experts group.}
+        \item {Automated fixes for recurring IDE issues and improved internal profiling tools.}
+        \item {Debugged 40+ year old codebase, actively found and fixed performance bugs (30\% speedup in some algorithms).}
+    \end{itemize}
+
+    \textbf{SensingTex}                                     \hfill Jan 2023 \textendash{} Jul 2023 \\
+    \textit{Junior FullStack developer} \hfill \textit{Barcelona, Spain}
+    \begin{itemize}
+        \item To meet the deadline for a new product launch, I developed and integrated new features and algorithms, resulting in a successful release.
+        \item Led the development of the microcontroller firmware re-work (C++11), unifying the codebase across products and improving maintainability.
+    \end{itemize}
+
+    \textbf{Hewlett Packard \& UPC}                         \hfill Jan 2022 \textendash{} Aug 2022\\
+    \textit{Software developer intern} \hfill \textit{Barcelona, Spain}
+    \begin{itemize}
+        \item {Worked on slicing software (C++17) for SLS 3D printers, implementing support for the new file format ".3mf".}
+        \item I implemented triangle mesh optimization algorithms, reducing the slicing time for some meshes by 40\%.
+    \end{itemize}
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+    \vspace{-1.25em}
+    \item \textbf{Bachelor Thesis} \hfill Jul 2023 \textendash{} Jan 2024 \\
+    \href{https://github.com/ZephyrSV/tfg_python}{\it Orientating Biochemical reactions in metabolic pathways and Networks} \hfill {\it Barcelona, Spain} 
+    \begin{itemize}
+        \item { This study proposes an approach that utilizes ILP optimization to obtain a solution to the NP-hard problem of minimizing the number of external vertices in a hypergraph, in the context of Metabolic Pathways.}
+    \end{itemize}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% Achievements and Interests
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Achievements and Interests}
+    \begin{itemize}
+        \item \textbf{C++ Conferences} {CppOnSea UK 2025 (attendee), CppUnderTheSea Netherlands 2025 (volunteer).}
+        \item \textbf{C++ in-person Workshops} {\textit{"Structured Concurrency in C++: A Hands-On Workshop"} by Mateusz Pusz, "C++ Software Design" by Klaus Iglberger, "How to build a CUDA application in C++" by NVIDEA.}
+        \item \textbf{Hackathons} { Won 1st prize presented Optiver in HackUPC 2023. Won 2nd Prize in AdaHack 2022 Edinburgh.}
+        \item \textbf{Teaching} {Led study group through HighSchool and University. Created the University class' discord Server.}
+    \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHNICAL STRENGTHS	
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{SKILLS}
 
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    Programming Languages & C++, C, Rust, Python, Java, SQL, Javascript, LaTeX. \\
-    Spoken Languages & French (native), English (C2), Spanish (C2).\\
-    Soft Skills & Leadership, Communication, Autonomous-Learning, Teamwork.\\
-    Technical Skills    & Embedded Systems, Data Structures \& Algorithms, (Non-)Relational Databases,\\ 
-                        & Continous Integration, Cloud Services, Scalability, RESTful APIs, Testing.\\
+    Programming Languages       & C++, C, C\#, Rust, Python, Java, Scala, Powershell, SQL, Javascript.\\
+    Spoken Languages            & French (native), English (C2), Spanish (C2).\\
+    Soft Skills                 & Autonomous-Learning, Leadership, Communication, Teamwork.\\
+    Technical Skills            & Embedded Systems, Data Structures \& Algorithms, Multithreading, Git, REST APIs,\\
+                                & (Non-)Relational Databases, Continuous Integration, Scalability, Testing.\\
     \end{tabular}\\
 
 \end{rSection}
-
-
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-{\bf Bachelor of Computer Science with Major in Computing $\mid$ 240 ECTS}, {\it Universitat Politècnica de Catalunya\/}  \hfill {(2024)}\\
-Relevant Coursework: \quad Quantum Computing/Cryptography $\diamond$ Graphics $\diamond$ Paralelism $\diamond$ Artificial Intelligence
-
- 
-
-{\bf Bachelor of Computer Science $\mid$ Erasmus}, {\it University of Edinburgh\/} \hfill {(2022)} \\
-Relevant Coursework: \quad Advanced Robotics $\diamond$ Machine Learning \& Pattern Recognition 
-
-\end{rSection}
-
-
-
-\begin{rSection}{EXPERIENCE}
-
-\textbf{Junior FullStack developer} \hfill (Jan 2023 - Jul 2023)\\
-SensingTex \hfill \textit{Barcelona, Spain}\\
-Utilising textile electronics to create medical solutions, I:
-\begin{itemize}
-    \itemsep -3pt {} 
-     \item Worked in a compact team using {\bf Agile} methodologies to maintain and develop new features across the stack, mainly focusing on {\bf microcontroller firmware}, {\bf cloud services} and {\bf web interfaces}.
-     \item To meet the deadline for a new product launch, I developed and integrated new features and algorithms, resulting in a successful release.
-     \item Led the development of the microcontroller firmware re-work ({\bf C++11}), unifying the codebase across products and improving maintainability.
-\end{itemize}
- 
-\textbf{Software developer - internship} \hfill (Jan 2022 - Aug 2022)\\
-Hewlett Packard \& UPC \hfill \textit{Barcelona, Spain}\\
-Worked on slicing software ({\bf C++17}) for SLS 3D printers, implementing support for the new file format ".3mf".
- \begin{itemize}
-     \itemsep -3pt {} 
-      \item I implemented {\bf triangle mesh optimization algorithms}, reducing the slicing time for some meshes by 40\%.
-      \item I created {\bf unit tests} and improved the {\bf benchmark system}.
-     \end{itemize}
-
-\end{rSection} 
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{PROJECTS \& ACTIVITIES}
-    \vspace{-1.25em}
-    \item \textbf{Orienting Biochemical Reactions.} {
-            Worked on hypergraphs, specifically on the novel NP-hard problem of orienting hyper-edges minimalizing external vertices, in the context of metabolic pathways. 
-            I created an AMPL model that obtains an optimized solution. 
-            This work was presented as my final thesis for my Bachelor and netted me a 9.1/10. \\
-            All code and presentation material can be found \href{https://github.com/ZephyrSV/tfg_python}{here}!.
-        }
-    \item \textbf{Hackathons.} {
-        I participated in the 2023 HackUPC and won the first prize presented by Optiver.
-        I also placed 2nd in the 2022 AdaHack in Edinburgh.
-    }
-\end{rSection} 
-
-%----------------------------------------------------------------------------------------
-\begin{rSection}{miscellaneous Achievements}
-    \begin{itemize}
-        \itemsep -3pt {}
-        \item 	Led study group for 10+ students in High School for 2 years and for 4+ students in University for 2 years.
-        \item   Created and moderated the main Discord server for my class in University. 
-        \item	Skipped a grade in High School by passing the CE2D exam with the highest score in Belgium.
-    \end{itemize}
-\end{rSection}
-
 
 \end{document}
