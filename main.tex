@@ -1,6 +1,6 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.4 in,top=0.35in,right=0.4 in,bottom=0.35in]{geometry} % Document margins
 \usepackage{textcomp} % for \textasciitilde command
 \usepackage{enumitem} 
 \usepackage{bookmark}
@@ -14,6 +14,7 @@
 
 \setlist[itemize]{topsep=-3pt, itemsep=-5pt, left=5pt}
 
+\def\sectionskip{\smallskip}
 \renewcommand*\familydefault{\sfdefault} 	
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
@@ -22,6 +23,7 @@
     \raisebox{0.5ex}{\texttildelow}
 }
 \name{Zephyr Serret}
+\address{{\large C++ Software Engineer \textendash{} performance-critical systems \& large-scale codebases}}
 \address{+32 470 85 10 51 \\ \href{mailto:zserret@me.com}{zserret@me.com} \\ \href{https://linkedin.com/in/zephyrsv}{linkedin.com/in/zephyrsv} \\ \href{https://github.com/ZephyrSV}{github.com/ZephyrSV}}  %
 
 \begin{document}
@@ -49,24 +51,24 @@ Bachelor of Computer Science with Major in Computing \hfill {\it Barcelona, Spai
     \href{https://omp.com/}{\textbf{OM Partners}}           \hfill May 2024 \textendash{} Present \\
     \textit{Software Development Engineer} \hfill \textit{Antwerp, Belgium}
     \begin{itemize}
-        \item {Tasked with solving performance and scalability issues in supply-chain planning application. Developed a multi-threaded, graph-based algorithm (C++20) which was deployed to end customers and integrated into the core optimization engine.}
-        \item {Introduced new tooling and data-structures improving the codebase's debuggability, understandability and performance, landing me a spot in the company's C++ experts group.}
-        \item {Automated fixes for recurring IDE issues and improved internal profiling tools.}
-        \item {Challenged to debug a 40 year old codebase, 18000 KLOC and many interdependencies. Diagnosed and fixed performance bugs resulting in speedups in the magnitude of several hours.}
+        \item {Designed and shipped a multi-threaded, graph-based optimization algorithm (C++20) to resolve performance and scalability bottlenecks in a supply-chain planning application; deployed to end customers and integrated into the core optimization engine.}
+        \item {Built internal tooling and data structures that improved codebase performance, debuggability and clarity; selected into the company's C++ experts group as a result.}
+        \item {Automated resolution of recurring IDE issues and enhanced internal profiling tooling.}
+        \item {Diagnosed and fixed performance bugs in a 40-year-old, ${\sim}$18M-LOC codebase with deep interdependencies, achieving runtime reductions on the order of several hours.}
     \end{itemize}
 
     \textbf{SensingTex}                                     \hfill Jan 2023 \textendash{} Jul 2023 \\
-    \textit{Junior FullStack developer} \hfill \textit{Barcelona, Spain}
+    \textit{Junior Full-Stack developer} \hfill \textit{Barcelona, Spain}
     \begin{itemize}
-        \item To meet the deadline for a new product launch, I developed and integrated new features and algorithms, resulting in a successful release.
-        \item Led the development of the microcontroller firmware re-work (C++11), unifying the codebase across products and improving maintainability.
+        \item Developed and integrated new features and algorithms under deadline pressure, enabling a successful product launch.
+        \item Led a microcontroller firmware rewrite (C++11), unifying the codebase across products and improving maintainability.
     \end{itemize}
 
-    \textbf{Hewlett Packard \& UPC}                         \hfill Jan 2022 \textendash{} Aug 2022\\
+    \textbf{Hewlett Packard \textendash{} UPC (joint internship program)}                         \hfill Jan 2022 \textendash{} Aug 2022\\
     \textit{Software developer intern} \hfill \textit{Barcelona, Spain}
     \begin{itemize}
-        \item {Worked on slicing software (C++17) for SLS 3D printers, implementing support for the new file format ".3mf".}
-        \item I implemented triangle mesh optimization algorithms, reducing the slicing time for some meshes by 40\%.
+        \item {Implemented support for the ".3mf" file format in C++17 slicing software for SLS 3D printers.}
+        \item Implemented triangle-mesh optimization algorithms, reducing slicing time by up to 40\% on some meshes.
     \end{itemize}
 
 \end{rSection} 
@@ -80,7 +82,7 @@ Bachelor of Computer Science with Major in Computing \hfill {\it Barcelona, Spai
     \item \textbf{Bachelor Thesis} \hfill Jul 2023 \textendash{} Jan 2024 \\
     \href{https://github.com/ZephyrSV/tfg_python}{\it Orienting Biochemical reactions in Metabolic Pathways and Networks} \hfill {\it Barcelona, Spain} 
     \begin{itemize}
-        \item { This study proposes an approach that utilizes ILP optimization to obtain a solution to the NP-hard problem of minimizing the number of external vertices in a hypergraph, in the context of Metabolic Pathways.}
+        \item {Applied Integer Linear Programming (ILP) to an NP-hard hypergraph optimization problem \textendash{} minimizing external vertices in metabolic-pathway networks.}
     \end{itemize}
 \end{rSection} 
 
@@ -92,7 +94,7 @@ Bachelor of Computer Science with Major in Computing \hfill {\it Barcelona, Spai
         \item \textbf{C++ Conferences} {CppOnSea UK 2025 (attendee), CppUnderTheSea Netherlands 2025 (volunteer).}
         \item \textbf{C++ in-person Workshops} {\textit{``Structured Concurrency in C++: A Hands-On Workshop''} by Mateusz Pusz, \\
         \textit{``C++ Software Design''} by Klaus Iglberger, \textit{``How to build a CUDA application in C++''} by NVIDIA.}
-        \item \textbf{Hackathons} { Won 1st prize presented Optiver in HackUPC 2023. Won 2nd Prize in AdaHack 2022 Edinburgh.}
+        \item \textbf{Hackathons} { Won 1st prize presented by Optiver at HackUPC 2023; 2nd prize at AdaHack 2022, Edinburgh.}
         \item \textbf{Teaching} {Led study groups through HighSchool and University. Created the University class' Discord server.}
     \end{itemize}
 \end{rSection}
@@ -104,8 +106,9 @@ Bachelor of Computer Science with Major in Computing \hfill {\it Barcelona, Spai
 \begin{rSection}{SKILLS}
 
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    Programming Languages       & C++, C, C\#, Rust, Python, Java, Scala, Powershell, SQL, Javascript.\\
-    Spoken Languages            & French (native), English (C2), Spanish (C2).\\
+    Programming Languages       & {\bfseries Primary:} C++, C $\cdot$ {\bfseries Proficient:} Python, C\#, SQL\\
+                                & {\bfseries Familiar:} Rust, Java, Scala, JavaScript, PowerShell\\
+    Spoken Languages            & French (native), English (near-native), Spanish (near-native).\\
     Soft Skills                 & Autonomous learning, Leadership, Communication, Teamwork, Adaptability, Multicultural\\
     Technical Skills            & Embedded Systems, Data Structures \& Algorithms, Multithreading, Git, REST APIs,\\
                                 & (Non-)Relational Databases, Continuous Integration, Scalability, Testing.\\
